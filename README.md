@@ -1,1 +1,2 @@
-# torpedo
+# Torpedó
+# Szedlár Krisztina, Rohácsi Daniella
