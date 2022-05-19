@@ -1,8 +1,11 @@
 package torpedo;
 
+import java.util.Random;
+
 public class Tabla {
     private int sor, sorHossz, hajoHossz,hajokSzama;
     private String [] tabla;
+    private int [] hajoHelye;
     
 
     public void tablaLetrehoz() {
@@ -16,7 +19,13 @@ public class Tabla {
 
     }
 
-    public int hajoKezdete() {
-        return 0;
+    public int [] hajoHelye() {
+        Random rnd = new Random();
+        int elsohely= rnd.nextInt(sorHossz)-(sorHossz-hajoHossz+1);
+        for (int i = 0; i < hajoHossz; i++) {
+            hajoHelye[i] = elsohely;
+            elsohely++;
+        }
+        return hajoHelye;
     }
 }
