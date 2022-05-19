@@ -31,12 +31,15 @@ public class Tabla {
         }
     }
 
-    public int[] hajoHelye() {
+    public int[] hajoHelyeGeneral() {
         Random rnd = new Random();
-        int elsohely = rnd.nextInt(sorHossz) - (sorHossz - hajoHossz + 1);
+        hajoHelye = new int [hajoHossz]; 
+        int elsohely = rnd.nextInt(sorHossz-hajoHossz);
         for (int i = 0; i < hajoHossz; i++) {
+            System.out.println(elsohely);
             hajoHelye[i] = elsohely;
             elsohely++;
+            
         }
         return hajoHelye;
     }
