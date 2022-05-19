@@ -1,9 +1,9 @@
 package torpedo;
 
 public class Tabla {
-<<<<<<< HEAD
 
     private int sor, sorHossz, hajoHossz, hajokSzama;
+    String[] tabla;
 
     public Tabla(int sor, int sorHossz, int hajoHossz, int hajokSzama) {
         this.sor = sor;
@@ -19,21 +19,13 @@ public class Tabla {
     public Tabla(int sorHossz) {
         this(1, sorHossz, 3, 1);
     }
-=======
-    private int sor, sorHossz, hajoHossz,hajokSzama;
-    private String [] tabla;
-    
->>>>>>> 6bfbba4fabc128579c72f24cdc6b7811e0b42a42
 
     public void tablaLetrehoz() {
-        
-        for (int i = 0; i < sor; i++) {
-            for (int j = 0; j < sorHossz; j++) {
-                
-            }
-            
+        int elemSzam = sor *sorHossz;
+        tabla = new String[elemSzam];
+        for (int i = 0; i < elemSzam; i++) {
+            tabla[i] = " _ ";
         }
-
     }
 
     public int hajoKezdete() {
